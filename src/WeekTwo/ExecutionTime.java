@@ -15,6 +15,7 @@ public class ExecutionTime {
 		 * long endTime = System.currentTimeMillis(); 
 		 * long executionTime = endTime - startTime;
 		 */
+		//This program uses the ArraySort class
 
 		ArraySort sortArray = new ArraySort();
 		Integer[] array = new Integer[0];
@@ -56,9 +57,5 @@ public class ExecutionTime {
 		sortArray.printArray(array);
 		System.out.println();
 		System.out.println("It took " + executionTime + " milliseconds for your array to sort.");
-
-
-
 	}
-
 }
