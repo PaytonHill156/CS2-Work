@@ -31,6 +31,7 @@ public class ArraySort {
 	public Integer[] fillArrayWithRandom(Integer[] arrayToFill) {
 
 		for (int i = 0; i < arrayToFill.length; i ++) {
+			//look at for each
 			int randomNum = ThreadLocalRandom.current().nextInt(-1000, 1000 + 1);
 			arrayToFill[i] = randomNum;
 		}
@@ -53,7 +54,7 @@ public class ArraySort {
 		//return -- array
 	public Integer[] sortArrayAscending(Integer[] arrayToSort) {
 
-		Arrays.sort(arrayToSort);
+		Arrays.parallelSort(arrayToSort);
 
 		return arrayToSort;
 	}

@@ -27,7 +27,7 @@ public class ExecutionTime {
 
 		sortArray.sayHello();
 
-		array = sortArray.sizeArray(10000);
+		array = sortArray.sizeArray(165000);
 
 		array = sortArray.fillArrayWithRandom(array);
 
@@ -54,7 +54,7 @@ public class ExecutionTime {
 		}
 
 
-		sortArray.printArray(array);
+		//sortArray.printArray(array);
 		System.out.println();
 		System.out.println("It took " + executionTime + " milliseconds for your array to sort.");
 	}
