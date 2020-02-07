@@ -43,27 +43,6 @@ public class BST {
 		return false; //Something has gone horribly wrong, should never reach this point
 	}
 
-
-	//TODO Not needed, delete?
-	private int highest(Node current){
-		if(current.right == null){
-			return current.value;
-		} else {
-			return highest(current.right);
-		}
-	}
-
-
-	//TODO Not needed, delete?
-	private int lowest(Node current){
-		if(current.left == null){
-			return current.value;
-		} else {
-			return lowest(current.left);
-		}
-	}
-
-
 	//Printing the tree! Public wrapper
 	public void printLowToHigh(){
 		printLowToHigh(root);

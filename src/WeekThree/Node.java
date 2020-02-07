@@ -27,22 +27,4 @@ public class Node {
     public void setTestAnswers(char [] testAnswers) {
         this.testAnswers = testAnswers;
     }
-   
-    public String testAnswersToString(){
-        String testAnswerAsAString = new String();
-       
-        if(this.testAnswers == null){
-            return testAnswerAsAString;
-        }
-       
-        for(int i = 0; i < this.testAnswers.length; ++i){
-            //if(this.testAnswers[i] == null){
-            //  return testAnswerAsAString;
-            //}
-            testAnswerAsAString = testAnswerAsAString + ", " + this.testAnswers[i];
-        }
-       
-        return testAnswerAsAString;
-    }
- 
 }
