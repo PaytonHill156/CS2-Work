@@ -19,6 +19,5 @@ public class FindPrimes {
 			}
 			number = number.add(new BigInteger("1"));
 		}
-		
 	}
 }

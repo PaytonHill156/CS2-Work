@@ -9,7 +9,6 @@ public class DivisibleByTwoOrThree {
 		 * with 50 decimal digits that are divisible by 2 or 3.
 		 */
 		BigInteger startingNumber = getStartingNumber();
-		System.out.println(isDivisible(startingNumber));
 		int count = 0;
 
 		while(count < 10) {

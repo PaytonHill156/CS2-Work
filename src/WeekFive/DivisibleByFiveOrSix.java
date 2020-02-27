@@ -18,9 +18,8 @@ public class DivisibleByFiveOrSix {
 				System.out.println(number);
 				count++;
 			}
-			number = number.add(new BigInteger("1"));
+			number = number.add(new BigInteger("1"));	
 		}
-
 	}
 
 	//method to test bigint to see if it is divisible by two or three
