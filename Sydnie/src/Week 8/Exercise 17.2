@@ -1,0 +1,43 @@
+/*sources: 
+ * http://soultionmanual.blogspot.com/2017/01/chapter-17-exercise-2-introduction-to.html
+ * https://www.youtube.com/watch?v=DzIUMBTIsM8&feature=youtu.be
+*/
+
+import java.io.*;
+
+class Main {
+	public static void main(String[] args) throws FileNotFoundException, IOException {
+		System.out.println("Hello world!");
+		int ourNumber;
+		
+		try (
+
+			// Create an output stream to the file
+			// Append new data if file already exists
+
+			FileOutputStream output = 
+				new FileOutputStream("Exercise17_02.dat", true);
+
+		) {
+
+			// Output 100 integers created randomly into the file
+			System.out.print("Our number: ");
+			for (int i = 0; i < 100; i++) {
+
+				ourNumber = (int)(1 + Math.random() * 100);
+				System.out.print(ourNumber + " , ");
+				output.write(ourNumber);
+			}
+			System.out.println();
+		}
+		//read in file and print
+		FileInputStream input = new FileInputStream("Exercise17_02.dat");
+		int value;
+		System.out.println("Reading in: ");
+		while ((value = input.read()) != -1)
+			System.out.print(value + ", ");
+		System.out.println("Bye.");
+
+	}
+
+}
